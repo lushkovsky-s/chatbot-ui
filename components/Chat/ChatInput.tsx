@@ -202,10 +202,10 @@ export const ChatInput = ({
       } else if (e.key === '/' && e.metaKey) {
         e.preventDefault();
         setShowPluginSelect(!showPluginSelect);
-      } else if (e.key === 'ArrowDown' && e.shiftKey) {
+      } else if (e.key === 'ArrowDown' && e.shiftKey && e.ctrlKey) {
         e.preventDefault();
         setHistoryPromptIndexIncrement(-1);
-      } else if (e.key === 'ArrowUp' && e.shiftKey) {
+      } else if (e.key === 'ArrowUp' && e.shiftKey && e.ctrlKey) {
         e.preventDefault();
         setHistoryPromptIndexIncrement(1);
       } 
